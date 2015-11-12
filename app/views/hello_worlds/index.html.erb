@@ -2,7 +2,7 @@
 
 
 <% @hello_worlds.each do |hello_world| %>
-    <div style="position:absolute; top: <%=hello_world.y_top%>px; left:<%=hello_world.x_left%>px;  font-size: <%=hello_world.size%>px; color: <%=hello_world.color%>">
+    <div style="position:absolute; font-weight: bold; top: <%=hello_world.y_top%>px; left:<%=hello_world.x_left%>px;  font-size: <%=hello_world.size%>px; color: <%=hello_world.color%>">
       <div style=" -webkit-transform: rotate(<%=hello_world.rotation%>deg);
           -moz-transform: rotate(<%=hello_world.rotation%>deg);
           transform: rotate(<%=hello_world.rotation%>deg);

@@ -10,6 +10,18 @@ class HelloWorld < ActiveRecord::Base
 		x_left = size + rand(800)
 
 		color = 'ff0000'
+		# case rand(3)
+		# 	when 0
+		# 		# red
+		# 		color = 'ff0000'
+		# 	when 1
+		# 		# yellow
+		# 		color = 'ffff00'
+		# 	when 2
+		# 		# orange
+		# 		color = 'ffa500'
+		# end
+
 		color = darken_color(color, rand)
 		rotation = -80.0 + rand(160.0)
 
