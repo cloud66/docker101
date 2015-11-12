@@ -1,0 +1,12 @@
+<div style="position:absolute; z-index:999; top: 15px; left:5px; font-size: 40px; color: black; font-weight: bold; text-decoration: underline">Count: <%=@hello_worlds.count%></div>
+
+
+<% @hello_worlds.each do |hello_world| %>
+    <div style="position:absolute; top: <%=hello_world.y_top%>px; left:<%=hello_world.x_left%>px;  font-size: <%=hello_world.size%>px; color: <%=hello_world.color%>">
+      <div style=" -webkit-transform: rotate(<%=hello_world.rotation%>deg);
+          -moz-transform: rotate(<%=hello_world.rotation%>deg);
+          transform: rotate(<%=hello_world.rotation%>deg);
+          position:relative;"><%=hello_world.text%>
+      </div>
+    </div>
+<% end %>
